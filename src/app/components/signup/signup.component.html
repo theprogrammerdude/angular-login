@@ -1,0 +1,38 @@
+<div class="container">
+  <h2>Sign Up</h2>
+  <div class="input-container">
+    <div>
+      <input
+        type="email"
+        placeholder="Email"
+        class="input"
+        name="email"
+        [(ngModel)]="email"
+      />
+    </div>
+    <div>
+      <input
+        class="input"
+        type="password"
+        placeholder="Password"
+        name="password"
+        [(ngModel)]="password"
+      />
+    </div>
+    <div>
+      <input
+        class="input"
+        type="confirmPassword"
+        placeholder="Confirm Password"
+        name="confirmPassword"
+        [(ngModel)]="confirmPassword"
+      />
+    </div>
+    <button class="btn" (click)="signupUser()">
+      Submit
+    </button>
+  </div>
+  <h4>
+    <i class="fa fa-arrow-left"></i> Back to <a href="/login">Login</a> page
+  </h4>
+</div>

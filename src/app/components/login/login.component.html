@@ -1,0 +1,29 @@
+<div class="bg">
+  <div class="container">
+    <h2>Login</h2>
+    <div class="input-container">
+      <div>
+        <input
+          type="email"
+          placeholder="Email"
+          class="input"
+          name="email"
+          [(ngModel)]="email"
+        />
+      </div>
+      <div>
+        <input
+          class="input"
+          type="password"
+          placeholder="Password"
+          name="password"
+          [(ngModel)]="password"
+        />
+      </div>
+      <button class="btn" (click)="loginUser()">
+        Submit
+      </button>
+    </div>
+    <h4>Don't have an account <a href="/signup">Sign up</a> here</h4>
+  </div>
+</div>
